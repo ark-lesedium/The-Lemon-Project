@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300">
+  <title>The Lemon Project</title>
+
+  <!-- offset sticker shadow -->
+  <g transform="translate(9,9)">
+    <path d="M120,40.9 A120,120 0 0,1 120,259.1 A120,120 0 0,1 120,40.9 Z" fill="#1B1712"/>
+  </g>
+
+  <!-- leaf -->
+  <g transform="translate(95,40) rotate(-30)">
+    <path d="M-26,0 A29,29 0 0,1 26,0 A29,29 0 0,1 -26,0 Z" fill="#2FBF71" stroke="#1B1712" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M-19,0 L19,0" stroke="#1B1712" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- stem -->
+  <rect x="110" y="8" width="20" height="38" rx="8" fill="#8A5A2B" stroke="#1B1712" stroke-width="7" stroke-linejoin="round"/>
+
+  <!-- lemon body (vesica lens = two pointy tips, top & bottom) -->
+  <path d="M120,40.9 A120,120 0 0,1 120,259.1 A120,120 0 0,1 120,40.9 Z"
+        fill="#FFE100" stroke="#1B1712" stroke-width="11" stroke-linejoin="round"/>
+
+  <!-- soft body shading blotches -->
+  <g opacity="0.5">
+    <ellipse cx="86" cy="110" rx="26" ry="34" fill="#FFF3A6" opacity="0.7"/>
+    <ellipse cx="150" cy="190" rx="22" ry="30" fill="#F4C900" opacity="0.55"/>
+    <ellipse cx="160" cy="95" rx="16" ry="20" fill="#F4C900" opacity="0.4"/>
+  </g>
+
+  <!-- citrus texture lines -->
+  <g stroke="#F4C900" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.65">
+    <path d="M120,64 C 100,110 100,190 120,236"/>
+    <path d="M120,64 C 140,110 140,190 120,236"/>
+    <path d="M84,90 C 78,140 82,190 104,224"/>
+    <path d="M156,90 C 162,140 158,190 136,224"/>
+  </g>
+
+  <!-- highlight -->
+  <ellipse cx="82" cy="92" rx="14" ry="20" fill="#FFFFFF" opacity="0.55" transform="rotate(-20 82 92)"/>
+</svg>
