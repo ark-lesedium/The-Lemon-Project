@@ -111,15 +111,11 @@ section{ position:relative; padding: 96px 0; }
   gap: 30px;
   align-items:center;
   margin-top: 46px;
-  transform: rotate(-1deg);
-  transition: transform .2s ease, box-shadow .2s ease;
 }
-.leadership-card:hover{ transform: rotate(0deg); box-shadow: var(--shadow-hover); }
 .leadership-card .leadership-logo{
   width: 150px;
   min-width: 150px;
   height:auto;
-  transform: rotate(2deg);
 }
 .leadership-card h3{ font-size:1.2rem; margin-bottom:6px; }
 .leadership-card p{ margin:0 0 6px; }
@@ -341,7 +337,6 @@ section{ position:relative; padding: 96px 0; }
   font-weight:700;
   font-size:.82rem;
   box-shadow: var(--shadow-sm);
-  transform: rotate(-3deg);
 }
 .photo-accent{
   position:absolute;
@@ -358,6 +353,30 @@ section{ position:relative; padding: 96px 0; }
 @media (max-width: 900px){
   .mission-intro{ grid-template-columns: 1fr; }
   .mission-photos{ max-width: 380px; margin: 0 auto; padding-right: 16%; padding-bottom: 18%; }
+}
+
+/* ==========================================================================
+   Watch It Made (homepage video)
+   ========================================================================== */
+.watch-grid{
+  display:grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 48px;
+  align-items:center;
+}
+.watch-video{
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  overflow:hidden;
+  box-shadow: var(--shadow);
+  background:#000;
+}
+.watch-video video{ width:100%; display:block; }
+@media (max-width: 900px){
+  .watch-grid{ grid-template-columns: 1fr; text-align:center; }
+  .watch-grid .btn-row{ justify-content:center; }
+  .watch-video{ order:-1; }
 }
 
 /* ==========================================================================
@@ -409,9 +428,7 @@ section{ position:relative; padding: 96px 0; }
   transition: transform .2s ease, box-shadow .2s ease;
 }
 .stat-card:hover{ transform: rotate(0deg) translateY(-4px); box-shadow: var(--shadow-hover); }
-.stats-grid .stat-card:nth-child(1){ transform: rotate(-2deg); }
-.stats-grid .stat-card:nth-child(2){ transform: rotate(1.5deg); }
-.stats-grid .stat-card:nth-child(3){ transform: rotate(-1.5deg); }
+.stats-grid .stat-card:nth-child(1){ transform: rotate(-1.5deg); }
 .stat-card .num{
   font-family: var(--font-head);
   font-size: clamp(2.1rem, 4.6vw, 3rem);
@@ -469,14 +486,6 @@ section{ position:relative; padding: 96px 0; }
 .tile:nth-child(6n+4) .icon{ background: rgba(38,198,218,0.16); color:#0f8fa1; }
 .tile:nth-child(6n+5) .icon{ background: rgba(244,201,0,0.22); color:#8a6d00; }
 .tile:nth-child(6n+6) .icon{ background: rgba(27,23,18,0.08); color:var(--ink); }
-
-/* scrapbook-style skew — on purpose, straightens on hover */
-.tile:nth-child(6n+1){ transform: rotate(-1.6deg); }
-.tile:nth-child(6n+2){ transform: rotate(1.2deg); }
-.tile:nth-child(6n+3){ transform: rotate(-1deg); }
-.tile:nth-child(6n+4){ transform: rotate(1.6deg); }
-.tile:nth-child(6n+5){ transform: rotate(-1.2deg); }
-.tile:nth-child(6n+6){ transform: rotate(1deg); }
 
 /* ==========================================================================
    CTA band
@@ -667,10 +676,7 @@ section{ position:relative; padding: 96px 0; }
   align-items:center;
   gap: 28px;
   flex-wrap:wrap;
-  transform: rotate(-0.8deg);
-  transition: transform .2s ease, box-shadow .2s ease;
 }
-.download-card:hover{ transform: rotate(0deg); box-shadow: var(--shadow-hover); }
 .download-icon{
   width:72px; height:72px; min-width:72px;
   border-radius:20px;
