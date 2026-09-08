@@ -178,8 +178,8 @@ section{ position:relative; padding: 96px 0; }
   font-size: 1.2rem;
 }
 .brand .lemon-emoji{ font-size: 1.7rem; }
-.brand .logo-mark{ height: 38px; width:auto; display:block; }
-.footer-top .brand .logo-mark{ height: 42px; }
+.brand .logo-mark{ height: 34px; width:auto; display:block; }
+.footer-top .brand .logo-mark{ height: 38px; }
 .nav-links{
   display:flex;
   align-items:center;
@@ -717,6 +717,28 @@ section{ position:relative; padding: 96px 0; }
 }
 @media (max-width: 700px){ .guide-body-inner{ grid-template-columns: 1fr; } }
 .guide-body-inner h4{ font-size: 1rem; margin-bottom:10px; font-weight:700; }
+.guide-video-wrap{
+  grid-column: 1 / -1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap: 10px;
+  margin-top: 4px;
+}
+.guide-video-wrap video{
+  width:100%;
+  max-width: 300px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-sm);
+  background:#000;
+  display:block;
+}
+.guide-video-wrap .guide-video-caption{
+  font-weight:600;
+  font-size:.85rem;
+  color:#6a6459;
+  text-align:center;
+}
 .materials-list li{
   padding: 6px 0 6px 26px;
   position:relative;
