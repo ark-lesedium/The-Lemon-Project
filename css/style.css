@@ -476,12 +476,13 @@ section{ position:relative; padding: 96px 0; }
 }
 .tile h3{ font-size: 1.22rem; }
 .tile p{ margin-bottom: 14px; }
-.tile a.more{
+.tile a.more, a.more{
   font-family: var(--font-body);
   font-weight:600;
   color: var(--ink);
   border-bottom: 2px solid var(--pop);
   padding-bottom: 1px;
+  display:inline-block;
 }
 
 /* rotate accent backgrounds through palette for tiles */
@@ -683,6 +684,7 @@ section{ position:relative; padding: 96px 0; }
   gap: 28px;
   flex-wrap:wrap;
 }
+.download-card + .download-card{ margin-top: 22px; }
 .download-icon{
   width:72px; height:72px; min-width:72px;
   border-radius:20px;
